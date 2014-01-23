@@ -1,0 +1,65 @@
+SORT BACKWARDS
+It took approximately 38.2 to insertion sort
+
+It took approximately 0.01 to quick choose middle sort
+
+It took approximately 27.84 to quick choose last sort
+
+It took approximately 24.6 to quick choose first sort
+
+It took approximately 0.01 to merge sort
+
+It took approximately 0.01 to heap sort
+
+It took approximately 0 to quick sort
+
+
+SORT FORWARDS
+It took approximately 0 to insertion sort
+
+It took approximately 0.01 to quick choose middle sort
+
+It took approximately 28.52 to quick choose last sort
+
+It took approximately 28.3 to quick choose first sort
+
+It took approximately 0.01 to merge sort
+
+It took approximately 0.01 to heap sort
+
+It took approximately 0.01 to quick sort
+
+
+RANDOM
+It took approximately 19.19 to insertion sort
+
+It took approximately 0.03 to quick choose middle sort
+
+It took approximately 0.02 to quick choose last sort
+
+It took approximately 0.02 to quick choose first sort
+
+It took approximately 0.03 to merge sort
+
+It took approximately 0.03 to heap sort
+
+It took approximately 0.02 to quick sort
+
+
+
+ALL THE SAME
+
+It took approximately 0 to insertion sort
+
+It took approximately 0.01 to quick choose middle sort
+
+It took approximately 0 to quick choose last sort
+
+It took approximately 0.01 to quick choose first sort
+
+It took approximately 0.01 to merge sort
+
+It took approximately 0.01 to heap sort
+
+It took approximately 0 to quick sort
+

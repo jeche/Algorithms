@@ -1,0 +1,36 @@
+//Jessica Chen
+-----------------------------------------------------------------------------
+Sorting method              randomly     sorted       sorted       identical
+(including pivot            generated    in order     in reverse   elements
+rules for quicksort)                                                     
+=============================================================================
+insertion sort                           19.27     0     38.46     0.01
+
+-----------------------------------------------------------------------------
+heapsort                 0.03     0.02     0.02     0
+
+-----------------------------------------------------------------------------
+mergesort                  0.03     0.01     0.01     0.01
+
+-----------------------------------------------------------------------------
+quicksort with pivot rule:                 0.02     0     0.01     0.01
+choose median of 3
+-----------------------------------------------------------------------------
+quicksort with pivot rule:                 0.02     28.16     24.49     0
+choose first element
+-----------------------------------------------------------------------------
+quicksort with pivot rule:                   0.03     0     0     0.01
+choose middle element
+-----------------------------------------------------------------------------
+quicksort with pivot rule:                   0.02     28.36     28.22     0.01
+choose last element
+-----------------------------------------------------------------------------
+
+Table 1.  Timing results for the sorting algorithms with n = 250000.
+
+
+Ran as a single test.
+
+bg1
+
+Compiled with: g++ -O -Wall table1.cc group.cc rng.c timing.c

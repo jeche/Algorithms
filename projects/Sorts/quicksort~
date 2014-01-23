@@ -1,0 +1,84 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int getInvCount(vector<int> &arr, int n)
+{
+  int inv_count = 0;
+  int i, j;
+ 
+  for(i = 0; i < n - 1; i++)
+    for(j = i+1; j < n; j++)
+      if(arr[i] > arr[j])
+        inv_count++;
+ 
+  return inv_count;
+}
+
+void insertionSort(vector<int> & a)
+{
+  int j;
+  
+  for(int p = 1; p < 12; p++)
+  {
+    int tmp = a[p];
+    for(j = p; j > 0 && tmp < a[j-1]; j--)
+      a[j] = a[j-1];
+    a[j] = tmp;
+
+const int & median3( vector<int> & a, int left, int right )
+{
+  int center = ( left + right) / 2;
+  if( a[center] < a[left])
+    swap( a[left], a[center]);
+  if( a[right] < a[left])
+    swap( a[left], a[right]);
+  if(a[right] < a[center])
+    swap(a[center], a[right]);
+  
+  swap(a[center], a[right - 1]);
+  return a[right-1];
+
+void quicksort( vector<int> & a, int left, int right)
+{
+  if( left + 10 <= right)
+  {
+    int pivot = median3(a, left, right);
+    int i = left, j = right - 1;
+    for( ; ;)
+    {
+      while(a[++i] < pivot ) { }
+      while(pivot < a[--j]) { }
+      if( i < j)
+	swap( a[i], a[j]);
+      else
+	break;
+    cout<<a[0] <<"& " << a[1]<<"& " << a[2]<<"& " << a[3]<<"& " << a[4]<<"& "<< a[5]<<"& "<< a[6]<<"& "<< a[7]<<"& "<< a[8] <<"& "<< a[9]<<"& "<< a[10]<<"& "<< a[11]<<"&" << k <<"&" << getInvCount(a, 12)<< "\\" << "\\"<<  endl;
+    }
+    swap(a[i],a[right-1]);
+    quicksort(a, left, i-1);
+    quicksort(a, i+1 , right);
+  }
+  else
+    insertionSort(a, left, right);
+  }
+
+void quicksort( vector<int> & a)
+{
+ quicksort(a, 0, 12 - 1); 
+}
+
+int main()
+{
+vector<int> v(12);
+vector<int> tmpArray(12);
+v[0] = 42;
+v[1] = 57;
+v[2] = 7;
+v[3] = 40;
+v[4] = 83;
+v[5] = 78;v[6] =  86; v[7] = 89; v[8] = 80; v[9] = 91; v[10] = 79; v[11] = 84 ;
+
+mergeSort(v, tmpArray, 0, 12 -1);
+cout << v[0] <<" " << v[1]<<" " << v[2]<<" " << v[3]<<" " << v[4]<<" "<< v[5]<<" "<< v[6]<<" "<< v[7]<<" "<< v[8] <<" "<< v[9]<<" "<< v[10]<<" "<< v[11]<< endl;
+return 0;
+}
